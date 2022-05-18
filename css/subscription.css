@@ -1,0 +1,481 @@
+body{
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.part1{
+    height: 90px;
+    background-color: black;
+}
+
+.navbar{
+    background: rgba(185, 183, 183, 0.5);
+    filter: blur(15px);
+    filter: opacity(150%);
+    filter: brightness(150%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button1 a{
+    color: red;
+    font-family: sans-serif;
+    background-color: black;
+    border-radius: 10px;
+    width: 120px;
+    height: 30px;
+    padding: 5px 5px 5px 5px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    text-shadow: 0 0 8px black, 0 0 8px black, 0 0 8px black, 0 0 8px black, 0 0 8px black;
+}
+
+.component-1{
+    padding-left: 50px;
+    width: 30%;
+}
+
+.component-2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 300px;
+    width: 30%;
+    font-size: 20px;
+}
+
+.component-3{
+    text-decoration: none;
+    margin-left: 310px;
+    width: 8%;
+}
+
+.component-3 a:hover{
+    color: white;
+    background-color: black;
+    text-shadow: 0 0 8px red, 0 0 8px red;
+}
+
+.lain{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+}
+
+.register{
+    padding-top: 50px;
+    background-color: black;
+    height: 650px;
+}
+
+.background-register{
+    padding-top: 30px;
+    margin: 0px 200px 0px 200px;
+    text-align: left;
+    background-color: rgb(29, 28, 28);
+    width: 1000px;
+    height: 550px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px red, 0 0 20px red;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        box-shadow: 0 0 10px red, 0 0 15px red, 0 0 20px red;
+    }
+    to{
+        box-shadow: 0 0 15px red, 0 0 20px red, 0 0 25px red;
+    }
+}
+
+.regis{
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0 0 10px white, 0 0 20px white;
+}
+
+.Form{
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: left;
+    margin: 30px;
+    font-size: 25px;
+}
+
+.form button{
+    color: black;
+    border: none;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.form{
+    margin: 75px;
+    margin-left: 250px;
+}
+
+#email{
+    margin-left: 90px;
+    border: none;
+    background-color: #3c3c3c;
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+#password{
+    margin-left: 40px;
+    border: none;
+    background-color: #3c3c3c;
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+#mgender{
+    margin-left: 75px;
+}
+
+#fgender{
+    margin-left: 25px;
+}
+
+#plan{
+    margin-left: 10px;
+    border: #3c3c3c;
+    background-color: #3c3c3c;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+#agreement{
+    margin-right: 15px;
+}
+
+#textagree{
+    font-size: 20px;
+}
+
+.form button{
+    margin-left: 30px;
+    border: 5px solid black;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.form button:hover{
+    box-shadow: 0 0 10px white;
+}
+
+/* Responsive */
+
+.navbar .component-2{
+    display: flex;
+}
+
+.navbar .component-2 #nav-link{
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+.navbar .component-2 #nav-link:hover{
+    font-weight: bold;
+    color: black;
+    text-shadow: 0 0 8px white, 0 0 8px white, 0 0 8px white, 0 0 8px white, 0 0 8px white;
+}
+
+.navbar .navbar-toogle{
+    display: none;
+}
+
+@media only screen and (max-width: 900px){
+    .navbar{
+        background: rgba(185, 183, 183, 0.5);
+        filter: blur(15px);
+        filter: opacity(150%);
+        filter: brightness(150%);        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .component-1{
+        margin-right: 140px;
+    }
+
+    .navbar-2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar .navbar-toogle{
+        display: block;
+        padding: 20px;
+    }
+
+    .component-3{
+        padding: 0px;
+        padding-right: 250px;
+        margin: 5px;
+    }
+
+    .button1 a{
+        font-size: 10px;
+    }
+
+    .component-2{
+        display: none;
+        margin: 0px;
+        padding: 0px;
+        margin-right: 40px;
+        font-size: 10px;
+    }
+    .component-3 a:hover{
+        color: white;
+        background-color: black;
+        text-shadow: 0 0 8px red, 0 0 8px red;
+    }
+
+    .background-register{
+        margin: 0px 0px 0px;
+        margin-left: 45px;
+        width: 650px;
+        height: 500px;
+        margin-right: 20px;
+    }
+
+
+    .register{
+        height: 600px;
+    }
+
+    .form{
+        margin: 0 0 0 0;
+        padding: 0 0 0 75px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .part1{
+        height: 250px;
+    }
+    
+    .navbar{
+        background: rgba(185, 183, 183, 0.5);
+        filter: blur(15px);
+        filter: opacity(150%);
+        filter: brightness(150%);        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .component-1{
+        margin-right: 140px;
+    }
+
+    .navbar-2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar .navbar-toogle{
+        display: block;
+        padding: 20px;
+    }
+
+    .component-3{
+        padding: 0px;
+        padding-right: 250px;
+        margin: 5px;
+    }
+
+    .button1 a{
+        font-size: 10px;
+    }
+
+    .component-2{
+        display: none;
+        margin: 0px;
+        padding: 0px;
+        margin-right: 40px;
+        font-size: 10px;
+    }
+
+    .component-3 a:hover{
+        color: white;
+        background-color: black;
+        text-shadow: 0 0 8px red, 0 0 8px red;
+    }
+
+    .background-register{
+        margin: 0;
+        margin-left: 40px;
+        width: 300px;
+        height: 350px;
+        margin-right: 25px;
+    }
+
+    .regis{
+        font-size: 20px;
+    }
+
+    .register{
+        width: 400px;
+        height: 450px;
+    }
+
+    .form{
+        margin: 0;
+        padding: 0 30px 0 35px;
+    }
+
+    .Form{
+        padding: 0 0 0 0;
+        margin: 0 15px 0 0;
+        padding-top: 20px;
+        font-size: 15px;
+    }
+
+    #email{
+        margin-left: 38px;
+        border: none;
+        background-color: #3c3c3c;
+        width: 100px;
+        height: 3px;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+    }
+    
+    #password{
+        margin-left: 10px;
+        border: none;
+        background-color: #3c3c3c;
+        width: 100px;
+        height: 3px;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+    }
+    
+    #mgender{
+        margin-left: 30px;
+    }
+    
+    #fgender{
+        margin-left: 3px;
+    }
+    
+    #plan{
+        margin-left: 10px;
+        border: #3c3c3c;
+        background-color: #3c3c3c;
+        width: 100px;
+        padding: 1px;
+        border-radius: 10px;
+        color: white;
+        font-size: 15px;
+    }
+    
+    #agreement{
+        margin-right: 5px;
+    }
+    
+    .textagree{
+        font-size: 15px;
+    }
+    
+    .form button{
+        margin-left: 2px;
+        border: 5px solid black;
+        background-color: black;
+        color: white;
+        font-size: 15px;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .part1{
+        height:200px;
+    }
+    .navbar{
+        background: rgba(185, 183, 183, 0.5);
+        filter: blur(15px);
+        filter: opacity(150%);
+        filter: brightness(150%);        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .component-1{
+        margin-right: 500px;
+    }
+
+    .navbar-2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar .navbar-toogle{
+        display: block;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    .component-3{
+        padding: 0px;
+        padding-right: 250px;
+        margin: 5px;
+    }
+
+    .button1 a{
+        font-size: 30px;
+    }
+    .component-2{
+        display: none;
+        margin: 0px;
+        padding: 0px;
+        margin-right: 230px;
+        font-size: 30px;
+    }
+
+    .component-3 a:hover{
+        color: white;
+        background-color: black;
+        text-shadow: 0 0 8px red, 0 0 8px red;
+    }
+}
+
+
+
+
+
+
